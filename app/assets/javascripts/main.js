@@ -87,7 +87,7 @@ $(document).ready(function() {
 		}
 	};
 
-	xhr.open('GET', 'baby-steps.json', true);
+	xhr.open('GET', 'assets/javascripts/baby-steps.json', true);
 	xhr.send(null);
 			
 	//Current Step Selection
@@ -95,7 +95,7 @@ $(document).ready(function() {
 	var currentStep = $('.currentStep');
 
 	var activeIcon = $('img').last();
-	var stepContent = $('#stepContent section');
+	var stepContent = $('#stepContent .babyStep');
 	
 	step.eq(0).addClass('currentStep');
 	//$('step:first-child img:last-child').css('display', 'block');
